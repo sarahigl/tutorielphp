@@ -9,11 +9,9 @@
     <?php
         include('nav.php');
         include('connexion.php');
-
         //fetch data from bdd
         $req = $db->query('SELECT *  FROM utilisateurs;');
         $data = $req->fetchAll(PDO::FETCH_ASSOC);
-        //$req->closeCursor();
     ?>
     <h1> HOME </h1>
     <table class="listUser">
